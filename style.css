@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.styling-box {
+  height: 15rem;
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  transition: all 0.5s;
+}
+
+.styling-box.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.option-btn {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  border-radius: 50%;
+}
+
+#option-btn {
+  transition: all 0.2s;
+  fill: black;
+}
+
+#option-btn.active {
+  transform: rotateZ(180deg);
+}
